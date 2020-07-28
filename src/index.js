@@ -5,7 +5,7 @@ const ytdl = require('ytdl-core')
 const client = new Discord.Client();
 const queue = new Map();
 const Youtube = require('discord-youtube-api')
-const youtube = new Youtube("process.env.GOOGLEAPI")
+const youtube = new Youtube(process.env.GOOGLEAPI)
 
 client.once('ready', () => {
     console.log("Ready!")
