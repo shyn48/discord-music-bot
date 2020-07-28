@@ -1,11 +1,12 @@
 const Discord = require('discord.js')
-const prefix = "$"
-const token = 'NzM2ODgxMDIyNTE1MjgxOTIw.Xx1P7g.-v9OHoW9M_0JIglbZQjwGo7krgQ'
+const prefix = process.env.PREFIX
+const token = process.env.TOKEN
+console.log(prefix)
 const ytdl = require('ytdl-core')
 const client = new Discord.Client();
 const queue = new Map();
 const Youtube = require('discord-youtube-api')
-const youtube = new Youtube('AIzaSyDVVMCE2poJmP2VmrY15nkf3DFFqZ_uGlc')
+const youtube = new Youtube(process.env.GOOGLEAPI)
 
 client.once('ready', () => {
     console.log("Ready!")
