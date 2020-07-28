@@ -1,8 +1,6 @@
 const Discord = require('discord.js')
-const {
-    prefix,
-    token
-} = require("../config/config.json")
+const prefix = "$"
+const token = 'NzM2ODgxMDIyNTE1MjgxOTIw.Xx1P7g.-v9OHoW9M_0JIglbZQjwGo7krgQ'
 const ytdl = require('ytdl-core')
 const client = new Discord.Client();
 const queue = new Map();
