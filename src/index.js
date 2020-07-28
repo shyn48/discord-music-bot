@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
-const prefix = process.env.PREFIX
+const prefix = "$"
 const token = process.env.TOKEN
-console.log(prefix)
 const ytdl = require('ytdl-core')
 const client = new Discord.Client();
 const queue = new Map();
